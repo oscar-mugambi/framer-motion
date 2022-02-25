@@ -27,3 +27,5 @@ const forMap = async () => {
 };
 
 forMap();
+
+//dont filter in loops that expect a callback
