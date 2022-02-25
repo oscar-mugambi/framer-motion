@@ -15,15 +15,15 @@ const getFruitNum = (fruit) => {
   return sleep(2000).then(() => fruitBasket[fruit]);
 };
 
-const forLoop = async () => {
-  console.log('start');
-
+const forMap = async () => {
+  console.log('beginning of operation');
   const promises = await fruitsToGet.map(async (fruit) => {
     return await getFruitNum(fruit);
   });
-  const numFruits = await Promise.all(promises);
-  console.log(numFruits);
-  console.log('end');
+
+  const number = await Promise.all(promises);
+  console.log(number);
+  console.log('end of operation');
 };
 
-forLoop();
+forMap();
