@@ -1,10 +1,10 @@
+console.log('start');
+
 const fruitBasket = {
   apple: 23,
-  orange: 21,
-  peach: 23,
+  orange: 2,
+  peach: 10,
 };
-
-console.log('start');
 
 const sleep = (ms) => {
   return new Promise((resolve) => {
@@ -12,16 +12,12 @@ const sleep = (ms) => {
   });
 };
 
-const getNumFruit = (fruit) => {
+const getFruitNum = (fruit) => {
   return sleep(2000).then(() => fruitBasket[fruit]);
 };
 
-getNumFruit('apple').then((num) => {
+getFruitNum('apple').then((num) => {
   console.log(num);
 });
-
-// console.log(getNumFruit('apple'));
-// console.log(getNumFruit('orange'));
-// console.log(getNumFruit('peach'));
 
 console.log('end');
