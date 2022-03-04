@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div className='home container'>
+    <motion.div animate={{ marginTop: 200, opacity: 0.2, rotateZ: 180 }} className='home container'>
       <motion.h2
         animate={{
           fontSize: 50,
@@ -16,9 +16,9 @@ const Home = () => {
         Welcome to Pizza Joint
       </motion.h2>
       <Link to='/base'>
-        <button>Create Your Pizza</button>
+        <motion.button animate={{ scale: 1.5 }}>Create Your Pizza</motion.button>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 
