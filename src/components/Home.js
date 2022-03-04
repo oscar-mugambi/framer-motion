@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <motion.div
-      animate={{ marginTop: 200, opacity: 0.2 }}
-      transition={{ delay: 1.5, duration: 5 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 1.5, duration: 1.5 }}
       className='home container'
     >
       <motion.h2
