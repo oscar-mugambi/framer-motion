@@ -1,4 +1,4 @@
-const fruitInfo = {
+const fruitBasket = {
   apple: 23,
   orange: 21,
   peach: 23,
@@ -13,15 +13,15 @@ const sleep = (ms) => {
 };
 
 const getNumFruit = (fruit) => {
-  return fruitInfo[fruit];
+  return sleep(2000).then(() => fruitBasket[fruit]);
 };
 
-sleep(2000).getNumFruit(() => {
-  console.log('here we are');
+getNumFruit('apple').then((num) => {
+  console.log(num);
 });
 
-console.log(getNumFruit('apple'));
-console.log(getNumFruit('orange'));
-console.log(getNumFruit('peach'));
+// console.log(getNumFruit('apple'));
+// console.log(getNumFruit('orange'));
+// console.log(getNumFruit('peach'));
 
 console.log('end');
