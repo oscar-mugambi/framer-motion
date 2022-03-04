@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <motion.div animate={{ marginTop: 200, opacity: 0.2, rotateZ: 180 }} className='home container'>
+    <motion.div
+      animate={{ marginTop: 200, opacity: 0.2, rotateZ: 180 }}
+      transition={{ delay: 1.5, duration: 5 }}
+      className='home container'
+    >
       <motion.h2
         animate={{
           fontSize: 50,
