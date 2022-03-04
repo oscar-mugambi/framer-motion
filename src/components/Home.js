@@ -21,7 +21,7 @@ const Home = () => {
         Welcome to Pizza Joint
       </motion.h2>
       <Link to='/base'>
-        <motion.button animate={{ scale: 1.5 }}>Create Your Pizza</motion.button>
+        <motion.button whileHover={{ scale: 1.5 }}>Create Your Pizza</motion.button>
       </Link>
     </motion.div>
   );
